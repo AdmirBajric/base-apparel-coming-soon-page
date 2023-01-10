@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <div id="content-container">
+      <div id="main-container">
+        <img src="./images/bg-pattern-desktop.svg" alt="Pattern" />
+        <header id="header">
+          <img src="./images/logo.svg" alt="Logo Base Apparel" />
+        </header>
 
-  We're coming soon
+        <main id="main">
+          <div class="heading-container">
+            <div class="heading">
+              <h1>
+                <span>We're</span> <br />
+                coming <br />
+                soon
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                Hello fellow shoppers! We're currently building our new fashion
+                store. Add your email below to stay up-to-date with
+                announcements and our launch deals.
+              </p>
+            </div>
+          </div>
+          <form class="form">
+            <input type="email" name="email" placeholder="Email Address" />
+            <button>
+              <img src="./images/icon-arrow.svg" alt="Arrow Icon" />
+            </button>
+          </form>
+        </main>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+        <footer>
+          <p class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+          </p>
+        </footer>
+      </div>
+      <div id="bit-map">
+        <img src="./images/hero-desktop.jpg" alt="Hero Picture" />
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,193 @@
+@import url(normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --desuratedRed: hsl(0, 36%, 70%);
+  --softRed: hsl(0, 93%, 68%);
+  --darkGrayishRed: hsl(0, 6%, 24%);
+  --gradient1From: hsl(0, 0%, 100%);
+  --gradient1To: hsl(0, 100%, 98%);
+  --gradient2From: hsl(0, 80%, 86%);
+  --gradient2To: hsl(0, 74%, 74%);
+  --fontSize: 1rem;
+  --p1: 300;
+  --p2: 400;
+  --p3: 600;
+  --fontFamily: "Josefin Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--fontFamily);
+  background-color: rgb(52, 56, 43);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content-container {
+  width: 144rem;
+  height: 80rem;
+  display: flex;
+  justify-content: center;
+}
+
+#main-container {
+  width: 83rem;
+  background-image: linear-gradient(var(--gradient1From), var(--gradient1To));
+  position: relative;
+}
+
+#main-container img {
+  position: absolute;
+}
+
+#header {
+  position: absolute;
+  width: 15.8rem;
+  height: 3.1rem;
+  top: 7.5rem;
+  left: 16.5rem;
+}
+
+#main {
+  position: absolute;
+  width: 44.5rem;
+  height: 40.4rem;
+  top: 24.4rem;
+  left: 16.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading {
+  margin-bottom: 1.2rem;
+}
+
+.heading-container {
+  width: 44.5rem;
+  height: 30.8rem;
+  margin-bottom: 4rem;
+}
+
+.heading h1 {
+  color: var(--darkGrayishRed);
+  font-size: 6.4rem;
+  font-weight: var(--p3);
+  letter-spacing: 1.7rem;
+  text-transform: uppercase;
+}
+
+.heading h1 span {
+  color: var(--desuratedRed);
+  font-size: 6.4rem;
+  font-weight: var(--p1);
+  letter-spacing: 1.7rem;
+  text-transform: uppercase;
+}
+
+.text {
+  width: 44.4rem;
+  height: 8.4rem;
+}
+
+.text P {
+  width: 44.4rem;
+  color: var(--desuratedRed);
+  font-size: 1.6rem;
+  font-weight: var(--p2);
+  line-height: 2.8rem;
+}
+
+.form {
+  width: 44.5rem;
+  height: 5.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  width: 44.5rem;
+  height: 5.6rem;
+  border: none;
+  border: 1px solid var(--desuratedRed);
+  border-radius: 2.8rem;
+  padding-left: 3rem;
+  font-size: 1.6rem;
+  outline: none;
+  position: relative;
+}
+
+.form input::-webkit-input-placeholder {
+  color: var(--desuratedRed);
+  opacity: 0.5;
+}
+
+.form input:-ms-input-placeholder {
+  color: var(--desuratedRed);
+  opacity: 0.5;
+}
+
+.form input::-ms-input-placeholder {
+  color: var(--desuratedRed);
+  opacity: 0.5;
+}
+
+.form button {
+  position: absolute;
+  border: none;
+  right: 0rem;
+  width: 10rem;
+  height: 5.6rem;
+  border-radius: 2.8rem;
+  background: linear-gradient(
+    135deg,
+    var(--gradient2From) 0%,
+    var(--gradient2To) 100%
+  );
+  background-blend-mode: normal;
+  box-shadow: 0px 15px 20px var(--desuratedRed);
+  cursor: pointer;
+}
+
+.form button:active {
+  transform: scale(0.98);
+  background: linear-gradient(
+    135deg,
+    var(--gradient2To) 0%,
+    var(--gradient2From) 100%
+  );
+}
+
+.form button img {
+  width: 8.84px;
+  height: 17.67px;
+  position: absolute;
+  top: calc(50% - 8.835px);
+  left: calc(50% - 4.42px);
+}
+
+#bit-map {
+  align-self: center;
+}
+
+#bit-map img {
+  width: 61rem;
+  height: 80rem;
+}
