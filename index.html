@@ -40,12 +40,23 @@
               </p>
             </div>
           </div>
-          <form class="form">
-            <input type="email" name="email" placeholder="Email Address" />
+          <form novalidate class="form">
+            <input
+              class="email"
+              type="email"
+              name="email"
+              placeholder="Email Address"
+            />
+            <img
+              class="error"
+              src="./images/icon-error.svg"
+              alt="Email validation error"
+            />
             <button>
               <img src="./images/icon-arrow.svg" alt="Arrow Icon" />
             </button>
           </form>
+          <p class="error-txt">Please provide a valid email</p>
         </main>
 
         <footer>

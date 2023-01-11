@@ -118,8 +118,8 @@ body {
   width: 44.5rem;
   height: 5.6rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: end;
 }
 
 .form input {
@@ -183,6 +183,22 @@ body {
   left: calc(50% - 4.42px);
 }
 
+.error {
+  opacity: 0;
+  position: absolute;
+  right: 11.6rem;
+}
+
+.error-txt {
+  opacity: 0;
+  font-size: 1.3rem;
+  font-weight: var(--p2);
+  line-height: 2.8rem;
+  margin-left: 3.2rem;
+  margin-top: 0.4rem;
+  color: var(--softRed);
+}
+
 #bit-map {
   align-self: center;
 }
@@ -191,3 +207,5 @@ body {
   width: 61rem;
   height: 80rem;
 }
+
+/* Treba napraviti mobil izgled i treba na active state i kada posaljemo formu uraditi provjeru inputa */
