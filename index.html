@@ -16,64 +16,59 @@
     <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
-    <div id="content-container">
-      <div id="main-container">
-        <img src="./images/bg-pattern-desktop.svg" alt="Pattern" />
-        <header id="header">
-          <img src="./images/logo.svg" alt="Logo Base Apparel" />
-        </header>
+    <div id="main-container">
+      <header id="header">
+        <img src="./images/logo.svg" alt="Logo Base Apparel" />
+      </header>
 
-        <main id="main">
-          <div class="heading-container">
-            <div class="heading">
-              <h1>
-                <span>We're</span> <br />
-                coming <br />
-                soon
-              </h1>
-            </div>
-            <div class="text">
-              <p>
-                Hello fellow shoppers! We're currently building our new fashion
-                store. Add your email below to stay up-to-date with
-                announcements and our launch deals.
-              </p>
-            </div>
+      <div id="bit-map"></div>
+
+      <main id="main">
+        <div class="heading-container">
+          <div class="heading">
+            <h1>
+              <span>We're</span> <br />
+              coming <br />
+              soon
+            </h1>
           </div>
-          <form novalidate class="form">
-            <input
-              class="email"
-              type="email"
-              name="email"
-              placeholder="Email Address"
-            />
-            <img
-              class="error"
-              src="./images/icon-error.svg"
-              alt="Email validation error"
-            />
-            <button>
-              <img src="./images/icon-arrow.svg" alt="Arrow Icon" />
-            </button>
-          </form>
-          <p class="error-txt">Please provide a valid email</p>
-        </main>
+          <div class="text">
+            <p>
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+          </div>
+        </div>
+        <form novalidate class="form">
+          <input
+            class="email"
+            type="email"
+            name="email"
+            placeholder="Email Address"
+          />
+          <img
+            class="error"
+            src="./images/icon-error.svg"
+            alt="Email validation error"
+          />
+          <button class="submit">
+            <img class="icon" src="./images/icon-arrow.svg" alt="Arrow Icon" />
+          </button>
+        </form>
+        <p class="error-txt">Please provide a valid email</p>
+      </main>
 
-        <footer>
-          <p class="attribution">
-            Challenge by
-            <a
-              href="https://www.frontendmentor.io?ref=challenge"
-              target="_blank"
-              >Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
-          </p>
-        </footer>
-      </div>
-      <div id="bit-map">
-        <img src="./images/hero-desktop.jpg" alt="Hero Picture" />
-      </div>
+      <footer id="footer">
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </p>
+      </footer>
     </div>
+
     <script src="main.js"></script>
   </body>
 </html>
