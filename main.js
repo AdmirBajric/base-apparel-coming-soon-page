@@ -8,7 +8,7 @@ form.addEventListener("submit", (e) => {
   if (validateEmail(input)) {
     error.style.opacity = 0;
     errorTxt.style.opacity = 0;
-    alert("Thank You for Subscribing");
+    alert("Thank You for Subscribing!");
     input.value = "";
   } else {
     error.style.opacity = 1;
