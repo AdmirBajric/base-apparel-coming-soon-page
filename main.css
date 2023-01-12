@@ -33,4 +33,167 @@ body {
   height: 100vh;
   font-family: var(--fontFamily);
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-container {
+  width: 144rem;
+  height: 80rem;
+  display: grid;
+  grid-template-rows: 80rem;
+  grid-template-columns: 83rem 61rem;
+  grid-template-areas:
+    "content"
+    "bit-map";
+  position: relative;
+  background: url(./images/bg-pattern-desktop.svg) no-repeat;
+}
+
+#header {
+  grid-area: "content";
+  position: relative;
+}
+
+#header img {
+  position: absolute;
+  top: 6.57rem;
+  left: 16.5rem;
+  width: 15.7rem;
+  height: 3.15rem;
+}
+
+#bit-map {
+  grid-area: "bit-map";
+  background: url(./images/hero-desktop.jpg) no-repeat;
+}
+
+#main {
+  grid-area: "content";
+  width: 44.5rem;
+  height: 40.4rem;
+  position: absolute;
+  top: 23.4rem;
+  left: 16.5rem;
+}
+
+.heading {
+  width: 44.4rem;
+  height: 19.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.heading h1 {
+  color: var(--darkGrayishRed);
+  font-size: 6.4rem;
+  font-weight: var(--p3);
+  line-height: 1.1;
+  letter-spacing: 1.73rem;
+  text-transform: uppercase;
+}
+
+.heading h1 span {
+  color: var(--desuratedRed);
+  font-size: 6.4rem;
+  font-weight: var(--p1);
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 1.73rem;
+  text-transform: uppercase;
+}
+
+.text {
+  width: 44.4rem;
+  height: 8.4rem;
+  margin-bottom: 4rem;
+}
+
+.text p {
+  color: var(--desuratedRed);
+  font-size: 1.6rem;
+  font-weight: var(--p2);
+  line-height: 1.5;
+}
+
+.form {
+  width: 44.5rem;
+  height: 5.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email {
+  width: 44.5rem;
+  height: 5.6rem;
+  border-radius: 2.8rem;
+  border: 1px solid var(--desuratedRed);
+  outline: none;
+  font-size: 1.6rem;
+  font-weight: var(--p2);
+  line-height: 1.5;
+  padding-left: 2.4rem;
+  opacity: 0.5;
+}
+
+.error {
+  opacity: 0;
+  position: absolute;
+  right: 11.5rem;
+}
+
+.submit {
+  position: absolute;
+  left: calc(100% - 10rem);
+  width: 10rem;
+  height: 5.6rem;
+  border: none;
+  border-radius: 2.8rem;
+  background: linear-gradient(
+    135deg,
+    var(--gradient2From) 0%,
+    var(--gradient2To) 100%
+  );
+  background-blend-mode: normal;
+  box-shadow: 0px 15px 20px var(--grayishRed);
+}
+
+.error-txt {
+  opacity: 0;
+  width: 16.5rem;
+  height: 2.8rem;
+  color: var(--softRed);
+  font-size: 1.3rem;
+  font-weight: var(--p2);
+  margin-top: 0.4rem;
+  margin-left: 3.2rem;
+}
+
+#footer {
+  text-align: center;
+}
+
+.attribution {
+  color: var(--darkGrayishRed);
+}
+
+.attribution a {
+  color: var(--gradient2From);
+}
+
+.submit:active {
+  transform: scale(0.98);
+}
+
+.email::placeholder {
+  color: var(--desuratedRed);
+}
+
+.email:active::placeholder {
+  color: var(--desuratedRed);
+}
+
+.pattern {
+  opacity: 0;
 }

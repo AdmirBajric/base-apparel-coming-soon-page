@@ -8,8 +8,12 @@
       var(--gradient1To) 100%
     );
     background-blend-mode: normal;
+    display: block;
   }
+
   #main-container {
+    width: 37.5rem;
+    height: 80rem;
     display: grid;
     grid-template-rows: 8.4rem 25rem 46.6rem 5rem;
     grid-template-columns: 37.5rem;
@@ -18,6 +22,9 @@
       "bit-map"
       "main"
       "footer";
+    position: relative;
+    background: linear-gradient(150deg, #ffffff 0%, #fff4f4 100%);
+    background-blend-mode: normal;
   }
 
   #header {
@@ -25,7 +32,6 @@
   }
 
   #header img {
-    position: absolute;
     top: 3.1rem;
     left: 3.2rem;
     width: 10rem;
@@ -33,14 +39,16 @@
   }
 
   #bit-map {
-    grid-area: "bit-map";
     background: url(./images/hero-mobile.jpg) no-repeat;
   }
 
   #main {
     grid-area: "main";
-    text-align: center;
-    margin: 6.4rem 3.2rem 9.2rem 3.2rem;
+    width: 31.1rem;
+    height: 31rem;
+    position: relative;
+    top: 6.4rem;
+    left: 3.2rem;
   }
 
   #footer {
@@ -54,23 +62,14 @@
   }
 
   .heading h1 {
-    color: var(--darkGrayishRed);
     font-size: 4rem;
-    font-weight: var(--p3);
-    line-height: 1.1;
     text-align: center;
     letter-spacing: 1.8rem;
-    text-transform: uppercase;
   }
 
   .heading h1 span {
-    color: var(--desuratedRed);
     font-size: 4rem;
-    font-weight: var(--p1);
-    line-height: 1.1;
-    text-align: center;
     letter-spacing: 1.8rem;
-    text-transform: uppercase;
   }
 
   .text {
@@ -80,94 +79,37 @@
   }
 
   .text p {
-    color: var(--desuratedRed);
     font-size: 1.4rem;
-    font-weight: var(--p2);
-    line-height: 2.2rem;
+    line-height: 1.5;
     text-align: center;
   }
 
   .form {
     width: 31.1rem;
     height: 4.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .email {
     width: 31.1rem;
     height: 4.8rem;
-    border-radius: 2.8rem;
-    border: 1px solid var(--desuratedRed);
-    outline: none;
     font-size: 1.4rem;
-    font-weight: var(--p2);
-    line-height: 2.8rem;
-    padding-left: 2.4rem;
-    opacity: 0.5;
   }
 
   .error {
-    opacity: 0;
-    position: absolute;
-    right: 10.5rem;
+    right: 7.5rem;
   }
 
   .submit {
-    position: absolute;
-    right: 3.2rem;
+    left: calc(100% - 6.5rem);
     width: 6.4rem;
     height: 4.8rem;
-    border: none;
-    border-radius: 2.8rem;
-    background: linear-gradient(
-      135deg,
-      var(--gradient2From) 0%,
-      var(--gradient2To) 100%
-    );
-    background-blend-mode: normal;
-    box-shadow: 0px 15px 20px var(--grayishRed);
   }
 
   .error-txt {
-    opacity: 0;
-    position: absolute;
-    left: 56px;
-    top: 716px;
-    width: 165px;
-    height: 13px;
-    color: #f96464;
-    font-family: "Josefin Sans";
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  #footer {
-    text-align: center;
-  }
-
-  .attribution {
-    color: var(--darkGrayishRed);
-  }
-
-  .attribution a {
-    color: var(--gradient2From)
-  }
-
-  .submit:active {
-    transform: scale(0.98);
-  }
-
-  .email::placeholder {
-    color: var(--desuratedRed);
-  }
-
-  .email:active::placeholder {
-    color: var(--desuratedRed);
-  }
-
-  .pattern {
-    opacity: 0;
+    position: relative;
+    margin-top: 0.4rem;
+    margin-left: 2.4rem;
+    width: 16.5rem;
+    height: 1.3rem;
   }
 }
